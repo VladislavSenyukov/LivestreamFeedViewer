@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C599D07205082A40042DBAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D06205082A40042DBAD /* AppDelegate.m */; };
-		1C599D0A205082A40042DBAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D09205082A40042DBAD /* ViewController.m */; };
-		1C599D0D205082A40042DBAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C599D0B205082A40042DBAD /* Main.storyboard */; };
-		1C599D0F205082A40042DBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C599D0E205082A40042DBAD /* Assets.xcassets */; };
-		1C599D12205082A40042DBAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C599D10205082A40042DBAD /* LaunchScreen.storyboard */; };
-		1C599D15205082A40042DBAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D14205082A40042DBAD /* main.m */; };
+		1C599D2C205088B70042DBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C599D1C205088B70042DBAD /* Assets.xcassets */; };
+		1C599D2D205088B70042DBAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C599D1D205088B70042DBAD /* LaunchScreen.storyboard */; };
+		1C599D2E205088B70042DBAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C599D1F205088B70042DBAD /* Main.storyboard */; };
+		1C599D30205088B70042DBAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D24205088B70042DBAD /* ViewController.m */; };
+		1C599D31205088B70042DBAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D29205088B70042DBAD /* AppDelegate.m */; };
+		1C599D32205088B70042DBAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D2A205088B70042DBAD /* main.m */; };
+		1C599D372057379C0042DBAD /* LSFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D362057379C0042DBAD /* LSFeedItem.m */; };
+		1C599D3B20573D270042DBAD /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D3A20573D270042DBAD /* NSDate+Additions.m */; };
+		1C599D3E205741870042DBAD /* LSCountableItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D3D205741870042DBAD /* LSCountableItems.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C599D02205082A40042DBAD /* LivestreamFeedViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivestreamFeedViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C599D05205082A40042DBAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1C599D06205082A40042DBAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1C599D08205082A40042DBAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1C599D09205082A40042DBAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1C599D0C205082A40042DBAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1C599D0E205082A40042DBAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1C599D11205082A40042DBAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1C599D13205082A40042DBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C599D14205082A40042DBAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C599D1C205088B70042DBAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C599D1E205088B70042DBAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C599D20205088B70042DBAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C599D21205088B70042DBAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C599D24205088B70042DBAD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1C599D25205088B70042DBAD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1C599D28205088B70042DBAD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1C599D29205088B70042DBAD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1C599D2A205088B70042DBAD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C599D3320508ACD0042DBAD /* LSFeedProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFeedProtocols.h; sourceTree = "<group>"; };
+		1C599D34205733CE0042DBAD /* LSDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDefinitions.h; sourceTree = "<group>"; };
+		1C599D352057379C0042DBAD /* LSFeedItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFeedItem.h; sourceTree = "<group>"; };
+		1C599D362057379C0042DBAD /* LSFeedItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSFeedItem.m; sourceTree = "<group>"; };
+		1C599D38205739470042DBAD /* LSFeedKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFeedKeys.h; sourceTree = "<group>"; };
+		1C599D3920573D270042DBAD /* NSDate+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		1C599D3A20573D270042DBAD /* NSDate+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
+		1C599D3C205741740042DBAD /* LSCountableItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSCountableItems.h; sourceTree = "<group>"; };
+		1C599D3D205741870042DBAD /* LSCountableItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSCountableItems.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +70,74 @@
 		1C599D04205082A40042DBAD /* LivestreamFeedViewer */ = {
 			isa = PBXGroup;
 			children = (
-				1C599D05205082A40042DBAD /* AppDelegate.h */,
-				1C599D06205082A40042DBAD /* AppDelegate.m */,
-				1C599D08205082A40042DBAD /* ViewController.h */,
-				1C599D09205082A40042DBAD /* ViewController.m */,
-				1C599D0B205082A40042DBAD /* Main.storyboard */,
-				1C599D0E205082A40042DBAD /* Assets.xcassets */,
-				1C599D10205082A40042DBAD /* LaunchScreen.storyboard */,
-				1C599D13205082A40042DBAD /* Info.plist */,
-				1C599D14205082A40042DBAD /* main.m */,
+				1C599D22205088B70042DBAD /* Classes */,
+				1C599D1B205088B70042DBAD /* Resources */,
 			);
 			path = LivestreamFeedViewer;
+			sourceTree = "<group>";
+		};
+		1C599D1B205088B70042DBAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C599D1C205088B70042DBAD /* Assets.xcassets */,
+				1C599D1D205088B70042DBAD /* LaunchScreen.storyboard */,
+				1C599D1F205088B70042DBAD /* Main.storyboard */,
+				1C599D21205088B70042DBAD /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C599D22205088B70042DBAD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1C599D27205088B70042DBAD /* Business */,
+				1C599D2B205088B70042DBAD /* Model */,
+				1C599D23205088B70042DBAD /* UI */,
+				1C599D26205088B70042DBAD /* Additions */,
+				1C599D2A205088B70042DBAD /* main.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1C599D23205088B70042DBAD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1C599D24205088B70042DBAD /* ViewController.m */,
+				1C599D25205088B70042DBAD /* ViewController.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1C599D26205088B70042DBAD /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				1C599D3920573D270042DBAD /* NSDate+Additions.h */,
+				1C599D3A20573D270042DBAD /* NSDate+Additions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		1C599D27205088B70042DBAD /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				1C599D28205088B70042DBAD /* AppDelegate.h */,
+				1C599D29205088B70042DBAD /* AppDelegate.m */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		1C599D2B205088B70042DBAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C599D34205733CE0042DBAD /* LSDefinitions.h */,
+				1C599D38205739470042DBAD /* LSFeedKeys.h */,
+				1C599D3320508ACD0042DBAD /* LSFeedProtocols.h */,
+				1C599D352057379C0042DBAD /* LSFeedItem.h */,
+				1C599D362057379C0042DBAD /* LSFeedItem.m */,
+				1C599D3C205741740042DBAD /* LSCountableItems.h */,
+				1C599D3D205741870042DBAD /* LSCountableItems.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +198,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C599D12205082A40042DBAD /* LaunchScreen.storyboard in Resources */,
-				1C599D0F205082A40042DBAD /* Assets.xcassets in Resources */,
-				1C599D0D205082A40042DBAD /* Main.storyboard in Resources */,
+				1C599D2E205088B70042DBAD /* Main.storyboard in Resources */,
+				1C599D2C205088B70042DBAD /* Assets.xcassets in Resources */,
+				1C599D2D205088B70042DBAD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,29 +211,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C599D0A205082A40042DBAD /* ViewController.m in Sources */,
-				1C599D15205082A40042DBAD /* main.m in Sources */,
-				1C599D07205082A40042DBAD /* AppDelegate.m in Sources */,
+				1C599D3B20573D270042DBAD /* NSDate+Additions.m in Sources */,
+				1C599D31205088B70042DBAD /* AppDelegate.m in Sources */,
+				1C599D372057379C0042DBAD /* LSFeedItem.m in Sources */,
+				1C599D32205088B70042DBAD /* main.m in Sources */,
+				1C599D30205088B70042DBAD /* ViewController.m in Sources */,
+				1C599D3E205741870042DBAD /* LSCountableItems.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1C599D0B205082A40042DBAD /* Main.storyboard */ = {
+		1C599D1D205088B70042DBAD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1C599D0C205082A40042DBAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1C599D10205082A40042DBAD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C599D11205082A40042DBAD /* Base */,
+				1C599D1E205088B70042DBAD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C599D1F205088B70042DBAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C599D20205088B70042DBAD /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZVHW8QUG2S;
-				INFOPLIST_FILE = LivestreamFeedViewer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LivestreamFeedViewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruckef.LivestreamFeedViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZVHW8QUG2S;
-				INFOPLIST_FILE = LivestreamFeedViewer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LivestreamFeedViewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruckef.LivestreamFeedViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
