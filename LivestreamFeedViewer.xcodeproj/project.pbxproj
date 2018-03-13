@@ -16,6 +16,12 @@
 		1C599D372057379C0042DBAD /* LSFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D362057379C0042DBAD /* LSFeedItem.m */; };
 		1C599D3B20573D270042DBAD /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D3A20573D270042DBAD /* NSDate+Additions.m */; };
 		1C599D3E205741870042DBAD /* LSCountableItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D3D205741870042DBAD /* LSCountableItems.m */; };
+		1C599D4120575FF80042DBAD /* LSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D4020575FF80042DBAD /* LSNetworkManager.m */; };
+		1C599D44205766C10042DBAD /* LSFeedFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D43205766C10042DBAD /* LSFeedFetcher.m */; };
+		1C599D47205767AD0042DBAD /* LSFeedItemsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D46205767AD0042DBAD /* LSFeedItemsViewModel.m */; };
+		1C599D4A205767C20042DBAD /* LSFeedViewModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D49205767C20042DBAD /* LSFeedViewModelBuilder.m */; };
+		1C599D4E205779270042DBAD /* LSFeedCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C599D4D205779270042DBAD /* LSFeedCellViewModel.m */; };
+		9D2F5D1B225F5E86DFCB436E /* libPods-LivestreamFeedViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9D87C01F1F82AD3C17F184 /* libPods-LivestreamFeedViewer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,19 @@
 		1C599D3A20573D270042DBAD /* NSDate+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
 		1C599D3C205741740042DBAD /* LSCountableItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSCountableItems.h; sourceTree = "<group>"; };
 		1C599D3D205741870042DBAD /* LSCountableItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSCountableItems.m; sourceTree = "<group>"; };
+		1C599D3F20575FF80042DBAD /* LSNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSNetworkManager.h; sourceTree = "<group>"; };
+		1C599D4020575FF80042DBAD /* LSNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSNetworkManager.m; sourceTree = "<group>"; };
+		1C599D42205766C10042DBAD /* LSFeedFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFeedFetcher.h; sourceTree = "<group>"; };
+		1C599D43205766C10042DBAD /* LSFeedFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSFeedFetcher.m; sourceTree = "<group>"; };
+		1C599D45205767AD0042DBAD /* LSFeedItemsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFeedItemsViewModel.h; sourceTree = "<group>"; };
+		1C599D46205767AD0042DBAD /* LSFeedItemsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSFeedItemsViewModel.m; sourceTree = "<group>"; };
+		1C599D48205767C20042DBAD /* LSFeedViewModelBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFeedViewModelBuilder.h; sourceTree = "<group>"; };
+		1C599D49205767C20042DBAD /* LSFeedViewModelBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSFeedViewModelBuilder.m; sourceTree = "<group>"; };
+		1C599D4C205779270042DBAD /* LSFeedCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSFeedCellViewModel.h; sourceTree = "<group>"; };
+		1C599D4D205779270042DBAD /* LSFeedCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSFeedCellViewModel.m; sourceTree = "<group>"; };
+		2A8D9C98780A0EB78CFDBC6E /* Pods-LivestreamFeedViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivestreamFeedViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LivestreamFeedViewer/Pods-LivestreamFeedViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		A5B75B355F2C0211FAAE4EA4 /* Pods-LivestreamFeedViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivestreamFeedViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-LivestreamFeedViewer/Pods-LivestreamFeedViewer.release.xcconfig"; sourceTree = "<group>"; };
+		EF9D87C01F1F82AD3C17F184 /* libPods-LivestreamFeedViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LivestreamFeedViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2F5D1B225F5E86DFCB436E /* libPods-LivestreamFeedViewer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +76,8 @@
 			children = (
 				1C599D04205082A40042DBAD /* LivestreamFeedViewer */,
 				1C599D03205082A40042DBAD /* Products */,
+				4CCC0EE205E51D901D631950 /* Pods */,
+				1FF256D44FB148CBBFAE163D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,8 +124,8 @@
 		1C599D23205088B70042DBAD /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				1C599D24205088B70042DBAD /* ViewController.m */,
 				1C599D25205088B70042DBAD /* ViewController.h */,
+				1C599D24205088B70042DBAD /* ViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -122,6 +144,14 @@
 			children = (
 				1C599D28205088B70042DBAD /* AppDelegate.h */,
 				1C599D29205088B70042DBAD /* AppDelegate.m */,
+				1C599D48205767C20042DBAD /* LSFeedViewModelBuilder.h */,
+				1C599D49205767C20042DBAD /* LSFeedViewModelBuilder.m */,
+				1C599D45205767AD0042DBAD /* LSFeedItemsViewModel.h */,
+				1C599D46205767AD0042DBAD /* LSFeedItemsViewModel.m */,
+				1C599D42205766C10042DBAD /* LSFeedFetcher.h */,
+				1C599D43205766C10042DBAD /* LSFeedFetcher.m */,
+				1C599D3F20575FF80042DBAD /* LSNetworkManager.h */,
+				1C599D4020575FF80042DBAD /* LSNetworkManager.m */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -134,10 +164,29 @@
 				1C599D3320508ACD0042DBAD /* LSFeedProtocols.h */,
 				1C599D352057379C0042DBAD /* LSFeedItem.h */,
 				1C599D362057379C0042DBAD /* LSFeedItem.m */,
+				1C599D4C205779270042DBAD /* LSFeedCellViewModel.h */,
+				1C599D4D205779270042DBAD /* LSFeedCellViewModel.m */,
 				1C599D3C205741740042DBAD /* LSCountableItems.h */,
 				1C599D3D205741870042DBAD /* LSCountableItems.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1FF256D44FB148CBBFAE163D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF9D87C01F1F82AD3C17F184 /* libPods-LivestreamFeedViewer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CCC0EE205E51D901D631950 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D9C98780A0EB78CFDBC6E /* Pods-LivestreamFeedViewer.debug.xcconfig */,
+				A5B75B355F2C0211FAAE4EA4 /* Pods-LivestreamFeedViewer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C599D18205082A40042DBAD /* Build configuration list for PBXNativeTarget "LivestreamFeedViewer" */;
 			buildPhases = (
+				2DD64EC5C9F8137621F3F897 /* [CP] Check Pods Manifest.lock */,
 				1C599CFE205082A40042DBAD /* Sources */,
 				1C599CFF205082A40042DBAD /* Frameworks */,
 				1C599D00205082A40042DBAD /* Resources */,
+				4510ED05FDA6F50324BB4FF7 /* [CP] Embed Pods Frameworks */,
+				640624826B6BD08E93BE7BC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +258,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DD64EC5C9F8137621F3F897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LivestreamFeedViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4510ED05FDA6F50324BB4FF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LivestreamFeedViewer/Pods-LivestreamFeedViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		640624826B6BD08E93BE7BC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LivestreamFeedViewer/Pods-LivestreamFeedViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C599CFE205082A40042DBAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,8 +317,13 @@
 				1C599D3B20573D270042DBAD /* NSDate+Additions.m in Sources */,
 				1C599D31205088B70042DBAD /* AppDelegate.m in Sources */,
 				1C599D372057379C0042DBAD /* LSFeedItem.m in Sources */,
+				1C599D4A205767C20042DBAD /* LSFeedViewModelBuilder.m in Sources */,
 				1C599D32205088B70042DBAD /* main.m in Sources */,
+				1C599D47205767AD0042DBAD /* LSFeedItemsViewModel.m in Sources */,
 				1C599D30205088B70042DBAD /* ViewController.m in Sources */,
+				1C599D4120575FF80042DBAD /* LSNetworkManager.m in Sources */,
+				1C599D44205766C10042DBAD /* LSFeedFetcher.m in Sources */,
+				1C599D4E205779270042DBAD /* LSFeedCellViewModel.m in Sources */,
 				1C599D3E205741870042DBAD /* LSCountableItems.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +456,7 @@
 		};
 		1C599D19205082A40042DBAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8D9C98780A0EB78CFDBC6E /* Pods-LivestreamFeedViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +471,7 @@
 		};
 		1C599D1A205082A40042DBAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5B75B355F2C0211FAAE4EA4 /* Pods-LivestreamFeedViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

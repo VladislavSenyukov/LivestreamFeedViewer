@@ -11,6 +11,12 @@
 
 #import "LSDefinitions.h"
 
+@protocol LSFeedEventContainable;
+
+@protocol LSFeedFetchable <NSObject>
+- (void)fetchFeedAtPath:(NSString*)path completion:(void(^)(NSArray<NSObject<LSFeedEventContainable>*> *feedItems, NSError *error))completion;
+@end
+
 @protocol LSDeserializable <NSObject>
 - (instancetype)initWithDic:(NSDictionary *)dic;
 @end

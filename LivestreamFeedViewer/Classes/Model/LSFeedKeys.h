@@ -18,8 +18,8 @@ static NSString *const LSFeedEventCreatedAtKey = @"created_at";
 static NSString *const LSFeedEventUpdatedAtKey = @"updated_at";
 static NSString *const LSFeedEventPublishedAtKey = @"publish_at";
 static NSString *const LSFeedEventViewsCountKey = @"views";
-static NSString *const LSFeedEventLikesCountKey = @"likes";
-static NSString *const LSFeedEventCommentsCountKey = @"comments";
+static NSString *const LSFeedEventLikesKey = @"likes";
+static NSString *const LSFeedEventCommentsKey = @"comments";
 
 static NSString *const LSFeedItemCountableKey = @"total";
 

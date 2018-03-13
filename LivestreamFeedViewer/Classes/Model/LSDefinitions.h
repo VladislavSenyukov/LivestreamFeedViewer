@@ -15,7 +15,17 @@ typedef NS_ENUM(NSUInteger, LSFeedEventType) {
     LSFeedEventType_Video,
 };
 
-static NSString *const LSInputDateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'";
+// Formats
+static NSString *const LSInputDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSZ";
 static NSString *const LSOutputDateFormat = @"dd MMM yyyy, HH:mm";
+
+// URLs
+static NSString *const LSBaseServiceURLString = @"http://api.new.livestream.com";
+static NSString *const LSFeedPath = @"accounts/volvooceanrace/events/leg5";
+
+// Errors
+static NSErrorDomain const LSErrorDomainNetwork = @"LSErrorDomainNetwork";
+static NSInteger const LSErrorCodeNetworkServiceNotConfigured = 1000;
+static NSInteger const LSErrorCodeNetworkWrongResponse = 1001;
 
 #endif /* LSDefinitions_h */

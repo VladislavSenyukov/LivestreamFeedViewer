@@ -7,23 +7,30 @@
 //
 
 #import "ViewController.h"
+#import "LSDefinitions.h"
+#import "LSFeedViewModelBuilder.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) LSFeedItemsViewModel *feedViewModel;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setupFeedViewModel];
 }
 
+#pragma mark - Private
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupFeedViewModel {
+    LSFeedViewModelBuilder *builder = [[LSFeedViewModelBuilder alloc] initWithBaseURLString:LSBaseServiceURLString];
+    LSFeedItemsViewModel *model = [builder buildFeedItemsModelAtPath:LSFeedPath];
+    model.feedFilterBlock = ^BOOL(NSObject<LSFeedEventContainable> *item) {
+        return item.type == LSFeedEventType_Status;
+    };
+    [model load];
+    self.feedViewModel = model;
 }
-
 
 @end
