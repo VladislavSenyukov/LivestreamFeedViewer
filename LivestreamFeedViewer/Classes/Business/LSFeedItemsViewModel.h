@@ -6,7 +6,7 @@
 //  Copyright © 2018 Vladislav Senyukov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "LSFeedProtocols.h"
 #import "LSFeedCellViewModel.h"
 
@@ -14,9 +14,13 @@
 
 @property (nonatomic, readonly) NSObject<LSFeedFetchable> *feedFetcher;
 @property (nonatomic, readonly) NSString *feedPath;
+@property (nonatomic, readonly) NSInteger feedItemsCount;
 @property (nonatomic, copy) BOOL(^feedFilterBlock)(NSObject<LSFeedEventContainable>* item);
 @property (nonatomic, copy) void(^onDidUpdateLoading)(BOOL loading);
+@property (nonatomic, copy) void(^onDidLoadFeed)(void);
 
 - (instancetype)initWithFeedFetcher:(NSObject<LSFeedFetchable>*)feedFetcher feedPath:(NSString*)feedPath;
 - (void)load;
+- (LSFeedCellViewModel*)feedCellViewModelAtIndexPath:(NSIndexPath*)indexPath;
+
 @end

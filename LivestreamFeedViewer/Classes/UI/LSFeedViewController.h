@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LSFeedViewController.h
 //  LivestreamFeedViewer
 //
 //  Created by Vladislav Senyukov on 07.03.2018.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface LSFeedViewController : UIViewController
 
 
 @end

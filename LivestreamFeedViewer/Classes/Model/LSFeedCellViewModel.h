@@ -13,7 +13,7 @@
 @property (nonatomic, strong) NSString *createdAt;
 @property (nonatomic, strong) NSString *updatedAt;
 @property (nonatomic, strong) NSString *publishedAt;
-@property (nonatomic, assign) NSUInteger viewsCount;
-@property (nonatomic, assign) NSUInteger likesCount;
-@property (nonatomic, assign) NSUInteger commentsCount;
+@property (nonatomic, assign) NSString *viewsCount;
+@property (nonatomic, assign) NSString *likesCount;
+@property (nonatomic, assign) NSString *commentsCount;
 @end

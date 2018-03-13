@@ -46,6 +46,14 @@
     }];
 }
 
+- (LSFeedCellViewModel *)feedCellViewModelAtIndexPath:(NSIndexPath *)indexPath {
+    return self.cellModels[indexPath.row];
+}
+
+- (NSInteger)feedItemsCount {
+    return self.cellModels.count;
+}
+
 #pragma mark - Private
 
 - (NSArray<LSFeedCellViewModel*>*)createCellViewModelsFromFeedItems:(NSArray<NSObject<LSFeedEventContainable>*>*)feedItems {
@@ -56,9 +64,9 @@
         cellViewModel.createdAt = [feedItem.createdAt outputStringWithFormat:LSOutputDateFormat];
         cellViewModel.updatedAt = [feedItem.updatedAt outputStringWithFormat:LSOutputDateFormat];
         cellViewModel.publishedAt = [feedItem.publishedAt outputStringWithFormat:LSOutputDateFormat];
-        cellViewModel.viewsCount = feedItem.viewsCount;
-        cellViewModel.likesCount = feedItem.likes.count;
-        cellViewModel.commentsCount = feedItem.comments.count;
+        cellViewModel.viewsCount = [NSString stringWithFormat:@"%lu", feedItem.viewsCount];
+        cellViewModel.likesCount = [NSString stringWithFormat:@"%lu", feedItem.likes.count];
+        cellViewModel.commentsCount = [NSString stringWithFormat:@"%lu", feedItem.comments.count];
         [cellModels addObject:cellViewModel];
     }
     return [NSArray arrayWithArray:cellModels];
@@ -69,6 +77,15 @@
         _loading = loading;
         if (self.onDidUpdateLoading) {
             self.onDidUpdateLoading(loading);
+        }
+    }
+}
+
+- (void)setCellModels:(NSArray<LSFeedCellViewModel *> *)cellModels {
+    if (_cellModels != cellModels) {
+        _cellModels = cellModels;
+        if (cellModels.count && self.onDidLoadFeed) {
+            self.onDidLoadFeed();
         }
     }
 }
